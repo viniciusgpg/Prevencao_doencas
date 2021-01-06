@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 
-path = 'database_prevencao'
+path = 'database_prevencao.csv'
 data = pd.read_csv(path, sep=';')
 
 X = data.drop('grupo', axis=1)
