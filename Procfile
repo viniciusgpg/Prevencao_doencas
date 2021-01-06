@@ -1,1 +1,1 @@
-web: gunicorn --pythonpath '/home/vinicius/testeheroku/Prevencao_doencas/prevencao_ml' modelo
+web: gunicorn --pythonpath 'prevencao_ml' modelo.wsgi
