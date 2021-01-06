@@ -1,6 +1,8 @@
 import pandas as pd 
+import sys
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
+print(sys.path)
 
 path = '/home/vinicius/testeheroku/Prevencao_doencas/prevencao_ml/database_prevencao.csv'
 data = pd.read_csv(path, sep=';')
