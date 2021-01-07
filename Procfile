@@ -1,1 +1,1 @@
-web: gunicorn --pythonpath 'prevencao_ml' modelo.wsgi
+web: gunicorn modelo.wsgi
