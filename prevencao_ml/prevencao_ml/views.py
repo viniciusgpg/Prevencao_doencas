@@ -12,9 +12,8 @@ def getPredictions(peso, altura, imc, sistolica, diastolica, usa_medicamentos,
        hora_atv_fisica, alimentacao_saudavel, ansiedade, estresse):
     import pickle
     from django.contrib.staticfiles import finders
-    prevencaopath = finders.find('../prevencao.sav')
     print(prevencaopath)
-    model = pickle.load(open(prevencaopath, "rb"))
+    model = pickle.load(open('prevencao.sav', "rb"))
     prediction = model.predict([[peso, altura, imc, sistolica, diastolica, usa_medicamentos,
        cirurgia, diabetes, depressao, dor_cronica, hipertensao,
        cancer, outra_doenca, freq_medico, freq_exame, fuma,
