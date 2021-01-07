@@ -1,1 +1,1 @@
-web: gunicorn modelo.wsgi
+web: gunicorn modelo:application
