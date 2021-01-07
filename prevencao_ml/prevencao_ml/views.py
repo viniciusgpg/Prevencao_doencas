@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 # our home page view
 def home(request):    
-    return render(request, 'index.html')
+    return render(request, '../templates/index.html')
 
 
 def getPredictions(peso, altura, imc, sistolica, diastolica, usa_medicamentos,
