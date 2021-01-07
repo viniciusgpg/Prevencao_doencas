@@ -14,4 +14,4 @@ train_X, test_X, train_y, test_y = train_test_split(X, y, test_size=0.3, random_
 modelRandomForest.fit(train_X, train_y)
 
 import pickle
-pickle.dump(modelRandomForest,open("prevencao.sav", "wb"))
+pickle.dump(modelRandomForest,open("prevencao.sav", "w"))
