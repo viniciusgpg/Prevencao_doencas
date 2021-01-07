@@ -93,8 +93,8 @@ def result(request):
 
     result = getPredictions(peso, altura, imc, sistolica, diastolica, usa_medicamentos,
                             cirurgia, diabetes, depressao, dor_cronica, hipertensao,
-                            cancer, outra_doenca, freq_medico, freq_exame, fuma,
-                            parou_fumar, bebe, qtd_bebida, usa_droga, atv_fisica,
+                            cancer, outra_doenca, freq_medico, freq_exame,
+                            fuma, parou_fumar, bebe, qtd_bebida, usa_droga, atv_fisica,
                             hora_atv_fisica, alimentacao_saudavel, ansiedade, estresse)
 
     return render(request, 'result.html', {'result':result[0], 'message':result[1]})
