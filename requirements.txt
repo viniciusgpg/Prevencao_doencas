@@ -2,4 +2,3 @@ pandas
 sklearn
 gunicorn
 django
-pickle
